@@ -29,6 +29,8 @@ jobs:
       github_token: ((github_token))
       heroku_api_key: ((heroku_api_key))
       statuscake_api_key: ((statuscake_api_key))
+      hosted_graphite_apikey: ((hosted_graphite_apikey))
+      hosted_graphite_host: ((hosted_graphite_host))
       command: apply
       directories: |
           terraform

@@ -7,3 +7,11 @@ variable "app_prefix" {
 variable "pipeline_name" {
   default = "pgr301-exam"
 }
+
+variable "hosted_graphite_host" {
+  default = ""
+}
+
+variable "hosted_graphite_apikey" {
+  default = ""
+}
