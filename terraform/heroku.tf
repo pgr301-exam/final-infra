@@ -8,12 +8,11 @@ resource "heroku_app" "ci" {
     GRAPHITE_HOST = "${var.hosted_graphite_host}"
   }
 }
-
 resource "heroku_addon" "hostedgraphite_ci" {
   app  = "${heroku_app.ci.name}"
   plan = "hostedgraphite"
 }
-
+###################################################
 resource "heroku_app" "staging" {
   name   = "${var.app_prefix}-app-staging"
   region = "eu"
@@ -23,12 +22,11 @@ resource "heroku_app" "staging" {
     GRAPHITE_HOST = "${var.hosted_graphite_host}"
   }
 }
-
 resource "heroku_addon" "hostedgraphite_staging" {
-  app  = "${heroku_app.ci.name}"
+  app  = "${heroku_app.staging.name}"
   plan = "hostedgraphite"
 }
-
+###################################################
 resource "heroku_app" "production" {
   name   = "${var.app_prefix}-app-production"
   region = "eu"
@@ -38,9 +36,8 @@ resource "heroku_app" "production" {
     GRAPHITE_HOST = "${var.hosted_graphite_host}"
   }
 }
-
 resource "heroku_addon" "hostedgraphite_prod" {
-  app  = "${heroku_app.ci.name}"
+  app  = "${heroku_app.production.name}"
   plan = "hostedgraphite"
 }
 
