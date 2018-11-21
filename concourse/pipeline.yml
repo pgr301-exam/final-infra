@@ -43,7 +43,7 @@ resources:
 - name: monitoring-app
   type: git
   source:
-      uri: git@github.com:PGR301-2018/exam-app.git
+      uri: git@github.com:pgr301-exam/final-app.git
       branch: master
       private_key: ((deploy_key_app))
 
@@ -51,6 +51,6 @@ resources:
 - name: monitoring-infra
   type: git
   source:
-      uri: git@github.com:PGR301-2018/exam-infra.git
+      uri: git@github.com:pgr301-exam/final-infra.git
       branch: master
       private_key: ((deploy_key_infra))
