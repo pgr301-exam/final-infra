@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f8e2048-949e-42d6-9d4b-e3e9a1628f6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/concourse/pipeline.yml" beforeDir="false" afterPath="$PROJECT_DIR$/concourse/pipeline.yml" afterDir="false" />
-    </list>
+    <list default="true" id="7f8e2048-949e-42d6-9d4b-e3e9a1628f6c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,12 +214,12 @@
       <workItem from="1542832756730" duration="1238000" />
       <workItem from="1542836650050" duration="2948000" />
       <workItem from="1542840040882" duration="14130000" />
-      <workItem from="1542907238148" duration="2385000" />
+      <workItem from="1542907238148" duration="2653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28362000" />
+    <option name="totallyTimeSpent" value="28630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
