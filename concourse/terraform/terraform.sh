@@ -25,6 +25,7 @@ setup() {
 
     export hosted_graphite_host="${hosted_graphite_host}"
     export hosted_graphite_apikey="${hosted_graphite_apikey}"
+    export logz_io_token="${logz.io.token}"
 }
 
 setup_cache() {

@@ -15,3 +15,7 @@ variable "hosted_graphite_host" {
 variable "hosted_graphite_apikey" {
   default = ""
 }
+
+variable "logz_io_token" {
+  default = ""
+}

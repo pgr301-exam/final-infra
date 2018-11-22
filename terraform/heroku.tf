@@ -6,6 +6,7 @@ resource "heroku_app" "ci" {
   config_vars = {
     HOSTEDGRAPHITE_APIKEY = "${var.hosted_graphite_apikey}"
     GRAPHITE_HOST = "${var.hosted_graphite_host}"
+    LOGZ_IO_TOKEN = "${var.logz_io_token}"
   }
 }
 resource "heroku_addon" "hostedgraphite_ci" {
@@ -20,6 +21,7 @@ resource "heroku_app" "staging" {
   config_vars = {
     HOSTEDGRAPHITE_APIKEY = "${var.hosted_graphite_apikey}"
     GRAPHITE_HOST = "${var.hosted_graphite_host}"
+    LOGZ_IO_TOKEN = "${var.logz_io_token}"
   }
 }
 resource "heroku_addon" "hostedgraphite_staging" {
@@ -34,13 +36,14 @@ resource "heroku_app" "production" {
   config_vars = {
     HOSTEDGRAPHITE_APIKEY = "${var.hosted_graphite_apikey}"
     GRAPHITE_HOST = "${var.hosted_graphite_host}"
+    LOGZ_IO_TOKEN = "${var.logz_io_token}"
   }
 }
 resource "heroku_addon" "hostedgraphite_prod" {
   app  = "${heroku_app.production.name}"
   plan = "hostedgraphite"
 }
-
+###################################################
 resource "heroku_pipeline" "test-app" {
   name = "${var.pipeline_name}"
 }
