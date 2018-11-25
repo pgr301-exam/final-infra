@@ -13,6 +13,7 @@
 - Sett miljøvariabler for, **GITHUB_TOKEN** (Personal access token) og **HEROKU_API_KEY**
 - Start docker-compose
 - I infra kjør ```fly -t (min target) set-pipeline -c "infra repo"/concourse/pipeline.yml -l "infra repo"/credentials.yml -p student_name```
+- trigger funksjon er ikke implementert siden jeg ikke fikk ønsket resultat
 ![pipeline](https://github.com/pgr301-exam/final-infra/blob/master/pipeline.png)
 ![heroku](https://github.com/pgr301-exam/final-infra/blob/master/heroku.png)
 ![
