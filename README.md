@@ -2,7 +2,9 @@
 ### For å opprette pipeline gjør følgende
 
  - lag fork av app og infra repo
+ 
 [infra](https://github.com/pgr301-exam/final-infra)
+
 [app](https://github.com/pgr301-exam/final-app)
  - Endr **pipeline.yml**, og sett inn egne repositories under "source"
  - Lag egne deploy keys for begge git repo
